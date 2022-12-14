@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    
+    
+        int  length{};
+        int  width{};
+        int  height{};
+        int volume{};
+        
+        cout << "Enter the dimensions of the package LENGTH , WIDTH ,HEIGHT followed by a space"<< endl;
+        cin >>length >>width >>height;
+        
+        volume= length*width*height;
+        
+        cout << volume<< endl;
+        
+    if (length>=10 && width>=10 && height>=10){
+    
+          cout << "Entering dimensions successful "<< endl;  
+        
+        
+         if (volume>=5000&& volume<=10000)
+             cout << "The total cost for you  " << "30" << " $ "<< endl; 
+             
+         else if  (volume>10000)
+            cout << "The total cost for you inclusive a surchage for over 100 cubic meters " << "100" << " $ "<< endl; 
+         
+        else 
+            cout << "The total cost  " <<  "10" << " $ "<< endl; 
+            
+         
+        
+    }
+    else         
+            cout<<"All dimensions must be 10 inches or less or we cannot ship it"<< endl;
+            
+
+        
+        
+        
+        
+        
+        
+    return (0);
+    
+}
