@@ -1,0 +1,37 @@
+#include <iostream>
+
+
+using namespace std;
+
+
+ 
+int main(){
+    cout<<"===================================================="<<endl;
+    cout<<"                  MELLIORA RESTHOUSE                   "<<endl;
+    cout<<"===================================================="<<endl;
+    
+    int Numberoflargerooms {0};
+    
+    cout<<"How many large rooms do you wanna reserve(one room costs 30$) "<<endl;
+    cin>> Numberoflargerooms;
+    
+    int Numberofsmallrooms {0};
+    cout<<"How many small rooms do you wanna reserve(one room costs 15$) "<<endl;
+    cin>> Numberofsmallrooms;
+    
+    
+    cout<<"Your total room cost is ";
+    cout<<Numberoflargerooms*30 + Numberofsmallrooms*15 <<"$"<<endl;
+    cout<<"Your total cost inclusive VAT is "<< ((Numberoflargerooms*30*0.6)+(Numberoflargerooms*30)+(Numberofsmallrooms*30*0.6)+(Numberofsmallrooms*30))<<"$"<<endl;
+    
+return 0;
+
+    
+    
+    
+    
+}
+    
+
+    
+    
